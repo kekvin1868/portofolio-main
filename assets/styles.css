@@ -1,0 +1,207 @@
+:root {
+  --nav-color-1: #0d0d0d;
+  --nav-color-2: #242424;
+  --color-1-welcome: #cf6102;
+  --color-2-welcome: #7b2bfc;
+  --link-hover-color-1: #383838;
+  --link-hover-color-2: #262626;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    120deg,
+    var(--nav-color-1) 0%,
+    var(--nav-color-2)
+  );
+  height: 75px;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+}
+
+nav {
+  width: 250px;
+  height: 65px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > .nav-link {
+  text-decoration: none;
+  background-color: var(--link-hover-color-2);
+  color: white;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+nav > .nav-link:hover {
+  background: linear-gradient(
+    120deg,
+    var(--link-hover-color-1) 0%,
+    var(--link-hover-color-2) 50%
+  );
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    62deg,
+    var(--color-1-welcome),
+    var(--color-2-welcome)
+  );
+}
+
+#welcome-section > h1, p {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+#welcome-section > h1 {
+  margin-top: 80px;
+  font-weight: 750;
+  font-size: 50px;
+}
+
+#welcome-section > p {
+  margin-top: 0;
+  font-weight: 750;
+  font-size: 18px;
+}
+
+#projects {
+  width: 100%;
+  background: linear-gradient(
+    112deg,
+    var(--color-1-welcome),
+    var(--color-2-welcome)
+  );
+}
+
+.project-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 750;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 90px;
+  color: black;
+  text-align: center;
+}
+
+.project-showcase {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  width: 350px;
+  height: 390px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background: var(--nav-color-1);
+  text-decoration: none;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 100%;
+  max-height: 330px;
+}
+
+.project-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-weight: 600;
+}
+
+.code {
+  padding: 0 9px;
+  color: var(--nav-color-1);
+  transition: color 0.4s ease-out;
+}
+
+.project-tile:hover .code {
+  color: orange;
+}
+
+#project-link {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    -110deg,
+    var(--color-2-welcome),
+    var(--color-1-welcome)
+  );
+  display: flex;
+  align-items: center;
+  padding: 25% 0;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-height: 250px;
+}
+
+#project-link > h1 {
+  margin: 0;
+  font-weight: 750;
+  font-size: 50px;
+}
+
+.contacts-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-item {
+  text-decoration: none;
+  color: black;
+  padding: 40px 15px;
+}
+
+@media only screen and (max-width: 1400px){
+  #projects {
+    background: linear-gradient(
+      105deg,
+      var(--color-1-welcome),
+      var(--color-2-welcome)
+    );
+  }
+}
+
+@media only screen and (max-width: 900px){
+  #projects {
+    background: linear-gradient(
+      97deg,
+      var(--color-1-welcome),
+      var(--color-2-welcome)
+    );
+  }
+  #project-link {
+    background: linear-gradient(
+      -138deg,
+      var(--color-2-welcome),
+      var(--color-1-welcome)
+    );
+  }
+}
