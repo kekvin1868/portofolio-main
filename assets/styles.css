@@ -74,13 +74,13 @@ nav > .nav-link:hover {
 #welcome-section > h1 {
   margin-top: 80px;
   font-weight: 750;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #welcome-section > p {
   margin-top: 0;
   font-weight: 750;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 #projects {
@@ -106,14 +106,14 @@ nav > .nav-link:hover {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-  grid-gap: 3rem;
+  grid-gap: 6rem;
   flex-wrap: wrap;
 }
 
 .project-tile {
-  width: 350px;
-  height: 390px;
-  border: 1px solid black;
+  width: 340px;
+  height: 380px;
+  border: 2px solid black;
   margin: 0 auto;
   background: var(--nav-color-1);
   text-decoration: none;
